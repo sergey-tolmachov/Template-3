@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Template#1</title>
+    <title>Template#3</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,112 +22,36 @@
   <body>
 
     <!-- Cover -->
-    <div class="cover-container">
-      <div class="cover">
-        <span class="cover-title">Виктория и Александр</span>
-        <span class="cover-desc">[ wedding invitation ]</span>
-      </div>
-    </div>
+    <div class="cover-container1"></div>
 
     <!-- Text block -->
-    <div class="text-container">
-      <span class="text">
-        23 августа 2016 года - день, когда мы станем мужем и женой. 
-        <br><br>
-        Радость этого события мы хотим разделить с родными и близкими людьми в уютной атмосфере, наполненной счастьем.
-        <br><br>
-        Приглашаем провести этот день с нами
-        в концерт-холле "Сады Победы", <a class="location-link" target="_blank" href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB.+%D0%9F%D1%96%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%B0,+18,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@46.4409369,30.7496811,17z/data=!4m7!1m4!3m3!1s0x40c633ec8da06a93:0xa9141f3a4dfa402e!2z0LLRg9C7LiDQn9GW0L7QvdC10YDRgdGM0LrQsCwgMTgsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!3b1!3m1!1s0x40c633ec8da06a93:0xa9141f3a4dfa402e?hl=ru">Пионерская, 28</a>
-        <br><br>
-        Начало в 17:00
-      </span>
-    </div>
+    <div class="info-container">
+      <span class="cover-title">Виктория и Александр</span>
+      <span class="cover-desc">[ wedding invitation ]</span>
+      <div class="text-container">
+        <span class="text">
+          23 августа 2016 года - день, когда мы станем мужем и женой. 
+          <br><br>
+          Радость этого события мы хотим разделить с родными и близкими людьми в уютной атмосфере, наполненной счастьем.
+          <br><br>
+          Приглашаем провести этот день с нами
+          в концерт-холле "Сады Победы", <a class="location-link" target="_blank" href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB.+%D0%9F%D1%96%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%B0,+18,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@46.4409369,30.7496811,17z/data=!4m7!1m4!3m3!1s0x40c633ec8da06a93:0xa9141f3a4dfa402e!2z0LLRg9C7LiDQn9GW0L7QvdC10YDRgdGM0LrQsCwgMTgsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!3b1!3m1!1s0x40c633ec8da06a93:0xa9141f3a4dfa402e?hl=ru">Пионерская, 28</a>
+          <br><br>
+          Начало в 17:00
+        </span>
+      </div>
 
-    <!-- Button block -->
-    <div class="button-container">
-      <button type="button" class="answ-not-sure icon-not-sure btn" data-toggle="modal" data-target="#exampleModalnotsure" data-whatever="@mdo"></button>
-      <button type="button" class="answ-yes icon-yes btn" data-toggle="modal" data-target="#exampleModalyes" data-whatever="@fat"></button>
-      <button type="button" class="answ-no icon-no btn" data-toggle="modal" data-target="#exampleModalno" data-whatever="@getbootstrap"></button>
-    </div>
-
-    <!-- Modal Form (yes)-->
-
-    <div class="modal fade" id="exampleModalyes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="exampleModalLabel">Я прийду :)</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" id="first-name" value="Имя">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="last-name" value="Фамилия">
-              </div>
-              <select class="form-control">
-                <option>папа невесты</option>
-                <option>папа жениха</option>
-                <option>друг семьи</option>
-                <option>сестра</option>
-                <option>случайный прохожий</option>
-              </select>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Send message</button>
-          </div>
-        </div>
+      <!-- Button block -->
+      <div class="button-container">
+        <button type="button" class="answ-not-sure btn" data-toggle="modal" data-target="#exampleModalnotsure" data-whatever="@mdo">я не уверен</button>
+        <button type="button" class="answ-yes btn" data-toggle="modal" data-target="#exampleModalyes" data-whatever="@fat">я пойду</button>
+        <button type="button" class="answ-no btn" data-toggle="modal" data-target="#exampleModalno" data-whatever="@getbootstrap">я не пойду</button>
       </div>
     </div>
 
-    <!-- Modal Form (no)-->
 
-    <div class="modal fade" id="exampleModalno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="exampleModalLabel">Я не смогу прийти :(</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" id="first-name" value="Имя">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="last-name" value="Фамилия">
-              </div>
-              <select class="form-control">
-                <option>папа невесты</option>
-                <option>папа жениха</option>
-                <option>друг семьи</option>
-                <option>сестра</option>
-                <option>случайный прохожий</option>
-              </select>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Send message</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="cover-container2"></div>
 
-    <!-- Modal Form (not sure)-->
-
-    <div class="modal fade" id="exampleModalnotsure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            ...
-
-        </div>
-      </div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
