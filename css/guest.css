@@ -6,6 +6,16 @@ body {
 	height: 100%;
 }
 
+.cover-small-screen1 {
+	display: none;
+}
+
+
+.cover-small-screen2 {
+	display: none;
+}
+
+
 .cover-container1 {
 	display: inline-block;
 	width: 25%;
@@ -19,6 +29,7 @@ body {
 	display: inline-block;
 	width: 50%;
 	height: 100%;
+	text-align: center;
 }
 
 .cover-container2 {
@@ -35,7 +46,10 @@ body {
 	font-size: 44px;
 	color: #414141;
 	display: block;
-	margin-top: 125px;
+	margin-top: 80px;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .cover-desc {
@@ -62,9 +76,9 @@ body {
 
 .text {
 	font-family: "PoiretOne-Regular";
-	font-size: 15px;
+	font-size: 16px;
 	color: #414141;
-	padding: 80px 0px;
+	padding: 160px 0px;
 	display: block;
 }
 
@@ -73,8 +87,12 @@ body {
 
 .button-container {
 	display: inline-block;
-	width: 40%;
 	text-align: center;
+	bottom: 0;
+    position: fixed;
+    margin-bottom: 60px;
+    width: 100%;
+    transform: translateX(-50%);
 }
 
 .answ-not-sure {
@@ -92,12 +110,12 @@ body {
 }
 
 .button-container .btn {
-	font-family: "segoeui";
-	font-size: 15px;
+	font-family: "PoiretOne-Regular";
+	font-size: 16px;
 	color: #757575;
 	background-color: white;
 	border: 1px solid #757575;
-	border-radius: 40px;
+	border-radius: 2px;
 	width: 120px;
 	height: 40px;
 	padding: 0;
@@ -128,48 +146,88 @@ body {
 
 /*Media screen*/
 
-@media screen and (max-width: 992px) {
 
 
+@media screen and (max-width: 1050px) {
+
+	.text {
+		padding: 80px 0px;
+	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
 
-		.answ-not-sure {
-		display: block;
-		margin: 10px 40px;
+	.cover-container1 {
+		display: none;
 	}
 
-		.answ-yes {
-		display: block;
-		margin: 20px 40px;
+	.cover-container2 {
+		display: none;
 	}
 
-		.answ-no {
-		display: block;
-		margin: 10px 40px;
+	.cover-small-screen1 {
+		display: inline-block;
+		width: 48%;
+		height: 400px;
+		background: url(../img/cover1.jpeg) center center no-repeat;
+		background-size: auto 100%;
+		float: left;
 	}
 
-	.icon-not-sure {
-		font-size: 29px;
+
+	.cover-small-screen2 {
+		display: inline-block;
+		width: 48%;
+		height: 400px;
+		background: url(../img/cover2.jpeg) center left no-repeat;
+		background-size: auto 100%;
+		float: right;
+	}
+
+	.info-container	{
+		width: 100%;
 	}
 
 	.button-container {
-		position: inherit;
+		position: relative;
+		margin-bottom: 30px;
+	    transform: translateX(0%);
 	}
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 450px) {
+
+	.button-container {
+		display: block;
+	}
 
 
-}
+	.answ-not-sure {
+		display: block;
+		margin: 20px 0px;
+	}
 
+	.answ-yes {
+		display: block;
+		margin: 20px 0px;
+	}
 
-@media screen and (max-width: 600px) {
+	.answ-no {
+		display: block;
+		margin: 20px 0px 0px 0px;
+	}
 
-	.cover-container {
-		background: url(../img/cover.jpg) no-repeat;
-		background-size: auto 400px;
+	.button-container {
+		display: inline-block;
+	    margin-bottom: 30px;
+	    width: 80%;
+	    padding: 0% 11.429%;
+
+	}
+
+	.button-container .btn {
+		width: 100%; 
 	}
 }
 
