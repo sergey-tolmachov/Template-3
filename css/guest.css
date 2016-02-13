@@ -1,32 +1,61 @@
-.cover-container {
-	display: block;
-	width: 100%;
-	height: 400px;
-	background: url(../img/cover.jpg) center center no-repeat;
-	background-size: 100% auto;
+html {
+	height: 100%;
 }
 
-.cover {
-	display: inline-block;
-	width: 100%;
+body {
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cover-small-screen1 {
+	display: none;
+}
+
+
+.cover-small-screen2 {
+	display: none;
+}
+
+
+.cover-container1 {
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	background: url(../img/cover1.jpeg) center center no-repeat;
+	background-size: auto 100%;
+	float: left;
+}
+
+.info-container {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
 	text-align: center;
 }
 
+.cover-container2 {
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	background: url(../img/cover2.jpeg) center left no-repeat;
+	background-size: auto 100%;
+	float: right;
+}
+
 .cover-title {
-	font-family: "Muller-Medium";
-	font-size: 48px;
-	color: white;
-	text-transform: uppercase;
+	font-family: "Pushkin";
+	font-size: 44px;
+	color: #414141;
 	display: block;
-	margin-top: 125px;
+	margin-top: 80px;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .cover-desc {
-	font-family: "Muller-Regular";
-	font-size: 21px;
-	color: rgba(255, 255, 255, 0.8);
+	font-family: "PoiretOne-Regular";
+	font-size: 18px;
+	color: #747474;
 	display: block;
 	margin-top: 20px;
 }
@@ -46,10 +75,10 @@
 }
 
 .text {
-	font-family: "Muller-Regular";
-	font-size: 15px;
-	color: #757575;
-	padding: 80px 0px;
+	font-family: "PoiretOne-Regular";
+	font-size: 16px;
+	color: #414141;
+	padding: 160px 0px;
 	display: block;
 }
 
@@ -58,11 +87,12 @@
 
 .button-container {
 	display: inline-block;
-	width: 100%;
 	text-align: center;
 	bottom: 0;
-	position: fixed;
-	margin-bottom: 60px;
+    position: fixed;
+    margin-bottom: 60px;
+    width: 100%;
+    transform: translateX(-50%);
 }
 
 .answ-not-sure {
@@ -71,50 +101,41 @@
 
 .answ-yes {
 	display: inline-block;
-	margin-left: 120px;
-	margin-right: 120px; 
+	margin-left: 40px;
+	margin-right: 40px; 
 }
 
 .answ-no {
 	display: inline-block;
 }
 
-.icon-not-sure {
-	font-size: 30px;
-	color: #757575;
-}
-
-
-.icon-yes {
-	font-size: 30px;
-	color: #757575;
-}
-
-
-.icon-no {
-	font-size: 30px;
-	color: #757575;
-}
-
-
-.icon-not-sure:hover {
-	color: #FFB300;
-}
-
-
-.icon-yes:hover {
-	color: #66BB6A;
-}
-
-
-.icon-no:hover {
-	color: #F44336;
-}
-
-
 .button-container .btn {
+	font-family: "PoiretOne-Regular";
+	font-size: 16px;
+	color: #757575;
 	background-color: white;
-	border: none;
+	border: 1px solid #757575;
+	border-radius: 2px;
+	width: 120px;
+	height: 40px;
+	padding: 0;
+}
+
+.answ-not-sure:hover {
+	color: #FFB300;
+	border: 1px solid #FFB300;
+}
+
+
+.answ-yes:hover {
+	color: #66BB6A;
+	border: 1px solid #66BB6A;
+}
+
+
+.answ-no:hover {
+	color: #F44336;
+	border: 1px solid #F44336;
 }
 
 .btn:focus {
@@ -125,48 +146,88 @@
 
 /*Media screen*/
 
-@media screen and (max-width: 992px) {
 
 
+@media screen and (max-width: 1050px) {
+
+	.text {
+		padding: 80px 0px;
+	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
 
-		.answ-not-sure {
-		display: block;
-		margin: 10px 40px;
+	.cover-container1 {
+		display: none;
 	}
 
-		.answ-yes {
-		display: block;
-		margin: 20px 40px;
+	.cover-container2 {
+		display: none;
 	}
 
-		.answ-no {
-		display: block;
-		margin: 10px 40px;
+	.cover-small-screen1 {
+		display: inline-block;
+		width: 48%;
+		height: 400px;
+		background: url(../img/cover1.jpeg) center center no-repeat;
+		background-size: auto 100%;
+		float: left;
 	}
 
-	.icon-not-sure {
-		font-size: 29px;
+
+	.cover-small-screen2 {
+		display: inline-block;
+		width: 48%;
+		height: 400px;
+		background: url(../img/cover2.jpeg) center left no-repeat;
+		background-size: auto 100%;
+		float: right;
+	}
+
+	.info-container	{
+		width: 100%;
 	}
 
 	.button-container {
-		position: inherit;
+		position: relative;
+		margin-bottom: 30px;
+	    transform: translateX(0%);
 	}
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 450px) {
+
+	.button-container {
+		display: block;
+	}
 
 
-}
+	.answ-not-sure {
+		display: block;
+		margin: 20px 0px;
+	}
 
+	.answ-yes {
+		display: block;
+		margin: 20px 0px;
+	}
 
-@media screen and (max-width: 600px) {
+	.answ-no {
+		display: block;
+		margin: 20px 0px 0px 0px;
+	}
 
-	.cover-container {
-		background: url(../img/cover.jpg) no-repeat;
-		background-size: auto 400px;
+	.button-container {
+		display: inline-block;
+	    margin-bottom: 30px;
+	    width: 80%;
+	    padding: 0% 11.429%;
+
+	}
+
+	.button-container .btn {
+		width: 100%; 
 	}
 }
 
@@ -175,8 +236,8 @@
 /*Fonts Embed*/
 
 @font-face {
-    font-family: "Muller-Light";
-    src: url(../font/Muller-Light.otf);
+    font-family: "PoiretOne-Regular";
+    src: url(../font/PoiretOne-Regular.ttf);
 }
 
 @font-face {
@@ -185,6 +246,6 @@
 }
 
 @font-face {
-	font-family: "Muller-Medium";
-	src: url(../font/Muller-Medium.otf);
+	font-family: "Pushkin";
+	src: url(../font/Pushkin.ttf);
 }
